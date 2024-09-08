@@ -1,0 +1,5 @@
+{
+    "debug.onTaskErrors": "prompt",
+    "terminal.integrated.focusAfterRun": "terminal",
+    "python.REPL.enableREPLSmartSend": false
+}

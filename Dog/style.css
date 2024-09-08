@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+#home nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+#home .logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+#home nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+} 
+
+#home nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1rem 1.5rem;
+}
+
+#home nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+#home nav ul li a:hover{
+    color: orangered;
+}
+
+#home .text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+}
+
+
+#home .text-box h1{
+    font-size: 10rem;
+    line-height: 9rem;
+    margin-left: 1rem;
+}
+
+#home .text-box h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#about{
+    margin: 5rem 2rem 0 2rem;
+}
+
+#about .heading h3{
+    font-size: 4rem;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 1rem;
+}
+
+#about .heading h3 span{
+    font-weight: 100;
+}
+
+
+#about .container{
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex: wrap;
+    gap: 6rem;
+
+}
+
+#about .container .image{
+    flex: 1 1 31rem;
+}
+
+#about .container .image img{
+    width: 100%;
+    border-radius: 1rem 4rem 10rem;
+}
+
+#about .content{
+    flex: 1 1 41rem;
+}
+
+#about .content .title{
+    font-size: 4rem;
+    color: rgb(32, 30, 30);
+}
+
+#about .content p{
+    font-size: 1.7rem;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+#dogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6rem 8rem 10rem 6rem;
+}
+
+#dogs .heading{
+    width: 50%;
+    padding-bottom: 5rem;
+}
+
+#dogs .heading h3{
+    font-size: 4rem;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 1rem;
+}
+
+#dogs .heading h3 span{
+    font-weight: 100;
+}
+
+#dogs .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#dogs .container .box{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+#dogs .container .box img{
+    border-radius: 1rem;
+    width: 100%;
+    padding: .2rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+#dogs .container .box img:hover{
+    opacity: 80%;
+}
+
+@media only screen and (max-width: 769px){
+    #dogs .container{
+        flex-direction: column;
+    }    
+    #dogs .container .box{
+        width: 100%;
+    }
+}
